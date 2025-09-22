@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixelar - Transform Your Digital Ideas</title>
+<meta name="description" content="Create stunning digital products in minutes with Pixelar's intuitive design tools and professional templates.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="main.js"></script>
+</head>
+<body>
+<header class="container header" role="banner">
+  <div class="logo" aria-label="Nombre de la marca">Pixelar</div>
+  <nav class="nav" role="navigation" aria-label="Main menu">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div style="display:flex;gap:8px;align-items:center;">
+    <button id="themeToggle" class="mobile-toggle" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+    <button id="mobileToggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<div id="mobileNav" class="container mobile-nav" role="navigation" aria-label="Mobile menu">
+  <a href="#features">Features</a><br>
+  <a href="#pricing">Pricing</a><br>
+  <a href="#contact">Contact</a>
+</div>
+
+<main class="container">
+  <section class="hero" aria-label="Main section">
+    <div>
+      <div class="eyebrow reveal">Launch</div>
+      <h1 class="reveal">Create your digital product in minutes</h1>
+      <p class="tagline reveal">Transform your ideas into digital experiences with Pixelar</p>
+      <p class="reveal">Pixelar allows you to design, prototype and launch your projects without complications, with modern and collaborative tools.</p>
+      <div class="cta-group reveal">
+        <a href="#contact" class="btn">Get Started</a>
+        <a href="#features" class="btn secondary">View Features</a>
+      </div>
+    </div>
+
+    <aside class="card reveal" aria-label="Featured box">
+      <h2>Free Trial</h2>
+      <p>Sign up and get a free 14-day demo.</p>
+      <form id="signupForm" aria-label="Signup form">
+        <label for="email">Email</label><br>
+        <input id="email" type="email" required placeholder="your@email.com" style="width:100%;padding:12px;margin-top:8px;margin-bottom:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:var(--text);backdrop-filter:blur(10px)"><br>
+        <button type="submit" class="btn" style="width:100%">Request Demo</button>
+        <div id="signupSuccess" class="success" role="status" aria-live="polite">Thank you! We'll contact you soon.</div>
+      </form>
+    </aside>
+  </section>
+
+  <section id="features" class="reveal" aria-label="Features">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="card feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Intuitive Design</h3>
+        <p>Create stunning projects with our drag-and-drop interface. No design experience required - our intuitive tools make it easy for anyone to build professional-looking digital products.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">👥</div>
+        <h3>Real-time Collaboration</h3>
+        <p>Work seamlessly with your team from anywhere in the world. Share projects, get instant feedback, and collaborate in real-time with built-in commenting and version control.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Professional Templates</h3>
+        <p>Choose from 50+ professionally designed templates across various industries. Each template is fully customizable and optimized for mobile, tablet, and desktop devices.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning Fast</h3>
+        <p>Experience blazing-fast performance with our optimized platform. Load times under 2 seconds and instant previews ensure your workflow never slows down.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Enterprise Security</h3>
+        <p>Your data is protected with bank-level security. SSL encryption, regular backups, and compliance with GDPR and SOC 2 standards keep your projects safe.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Advanced Analytics</h3>
+        <p>Track your project's performance with detailed analytics. Monitor user engagement, conversion rates, and get actionable insights to optimize your digital products.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="reveal" aria-label="Pricing">
+    <h2>Pricing Plans</h2>
+    <p class="pricing-subtitle">Choose the perfect plan for your needs</p>
+    <div class="pricing-grid">
+      <div class="card pricing-card">
+        <div class="plan-header">
+          <h3>Basic</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">0</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="plan-description">Perfect for getting started</p>
+        </div>
+        <ul class="features-list">
+          <li>✓ 3 Projects</li>
+          <li>✓ Basic Templates</li>
+          <li>✓ Community Support</li>
+          <li>✓ 1GB Storage</li>
+          <li>✓ Standard Export</li>
+        </ul>
+        <button class="btn plan-btn">Get Started</button>
+      </div>
+      
+      <div class="card pricing-card featured">
+        <div class="popular-badge">Most Popular</div>
+        <div class="plan-header">
+          <h3>Pro</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">29</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="plan-description">Best for professionals</p>
+        </div>
+        <ul class="features-list">
+          <li>✓ Unlimited Projects</li>
+          <li>✓ Premium Templates</li>
+          <li>✓ Priority Support</li>
+          <li>✓ 50GB Storage</li>
+          <li>✓ Advanced Export Options</li>
+          <li>✓ Team Collaboration</li>
+          <li>✓ Custom Branding</li>
+        </ul>
+        <button class="btn plan-btn">Start Free Trial</button>
+      </div>
+      
+      <div class="card pricing-card">
+        <div class="plan-header">
+          <h3>Business</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">99</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="plan-description">For growing businesses</p>
+        </div>
+        <ul class="features-list">
+          <li>✓ Everything in Pro</li>
+          <li>✓ Advanced Analytics</li>
+          <li>✓ White-label Solution</li>
+          <li>✓ 500GB Storage</li>
+          <li>✓ API Access</li>
+          <li>✓ Dedicated Account Manager</li>
+          <li>✓ Custom Integrations</li>
+        </ul>
+        <button class="btn plan-btn">Contact Sales</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal" aria-label="Contact" style="margin-top:48px;">
+    <h2>Get in Touch</h2>
+    <p class="contact-subtitle">Ready to transform your ideas? Contact us or sign up to get started.</p>
+    
+    <div class="contact-forms">
+      <div class="contact-form-container">
+        <h3>Send us a Message</h3>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input id="contactEmail" type="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required placeholder="Tell us about your project or ask any questions..."></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <div id="contactSuccess" class="success" role="status" aria-live="polite">Message sent successfully! We'll get back to you soon.</div>
+        </form>
+      </div>
+      
+      <div class="contact-form-container">
+        <h3>Sign Up for Updates</h3>
+        <form id="newsletterForm" class="contact-form">
+          <div class="form-group">
+            <label for="signupName">Full Name</label>
+            <input id="signupName" type="text" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email Address</label>
+            <input id="signupEmail" type="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="company">Company (Optional)</label>
+            <input id="company" type="text" placeholder="Your company name">
+          </div>
+          <div class="form-group checkbox-group">
+            <input id="newsletter" type="checkbox" checked>
+            <label for="newsletter">Subscribe to our newsletter for updates and tips</label>
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+          <div id="newsletterSuccess" class="success" role="status" aria-live="polite">Thank you for signing up! Check your email for confirmation.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="container footer" role="contentinfo">
+  <p>&copy; <span id="year"></span> Pixelar · Transforming Digital Ideas</p>
+</footer>
+</body>
+</html>
